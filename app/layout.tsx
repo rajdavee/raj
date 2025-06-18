@@ -13,15 +13,15 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Raj Dave - Full Stack Developer",
   description:
-    "Building clean code for a messy world. Full Stack Developer specializing in MERN Stack, Next.js, and Python.",
-  keywords: "Full Stack Developer, MERN Stack, Next.js, Python, React, Node.js",
+    "Full Stack Developer specializing in MERN Stack, Next.js, and Python. Expert in RAG and Gen AI solutions.",
+  keywords: "Full Stack Developer, MERN Stack, Next.js, Python, React, Node.js, RAG, Gen AI, LangChain, OpenAI",
   authors: [{ name: "Raj Dave" }],
   openGraph: {
     title: "Raj Dave - Full Stack Developer",
-    description: "Building clean code for a messy world.",
+    description: "Full Stack Developer specializing in MERN Stack, Next.js, and Python. Expert in RAG and Gen AI solutions.",
     type: "website",
   },
-    generator: 'v0.dev'
+  generator: 'raj'
 }
 
 export default function RootLayout({

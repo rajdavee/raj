@@ -22,27 +22,27 @@ export default function Home() {
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
             <span className="block">Raj Dave</span>
             <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal text-gray-600 mt-2">
-              Building clean code for a messy world.
+              Full Stack Developer specializing in MERN Stack, Next.js, and Python
             </span>
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-            Full Stack Developer specializing in <span className="font-semibold text-gray-900">MERN Stack</span>,{" "}
-            <span className="font-semibold text-gray-900">Next.js</span>, and{" "}
-            <span className="font-semibold text-gray-900">Python</span>
+            Expert in building modern web applications with{" "}
+            <span className="font-semibold text-gray-900">RAG</span> and{" "}
+            <span className="font-semibold text-gray-900">Gen AI</span> integration. Crafting intelligent solutions
+            that scale.
           </p>
 
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button asChild size="lg" className="group">
-              <Link href="/projects">
-                <Code2 className="mr-2 h-4 w-4" />
-                View My Work
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <Link href="/contact">Let's Talk</Link>
-            </Button>
+            <Link
+              href="/contact"
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Get in touch
+            </Link>
+            <Link href="/projects" className="text-sm font-semibold leading-6 text-gray-900">
+              View projects <span aria-hidden="true">→</span>
+            </Link>
           </div>
         </div>
       </section>

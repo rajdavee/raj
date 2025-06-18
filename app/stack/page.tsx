@@ -2,8 +2,19 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 const techStack = {
+  "AI & Machine Learning": {
+    description: "Artificial Intelligence and Machine Learning Solutions",
+    technologies: [
+      { name: "LangChain", level: "Expert", description: "Framework for building LLM applications" },
+      { name: "OpenAI API", level: "Expert", description: "Large Language Model integration" },
+      { name: "RAG", level: "Advanced", description: "Retrieval Augmented Generation" },
+      { name: "Vector Databases", level: "Advanced", description: "Pinecone, Weaviate, ChromaDB" },
+      { name: "Hugging Face", level: "Intermediate", description: "ML models and transformers" },
+      { name: "TensorFlow", level: "Intermediate", description: "Machine Learning framework" },
+    ],
+  },
   Frontend: {
-    description: "Building responsive, interactive user interfaces",
+    description: "Modern web development with React ecosystem",
     technologies: [
       { name: "React", level: "Expert", description: "Component-based UI development" },
       { name: "Next.js", level: "Expert", description: "Full-stack React framework" },
