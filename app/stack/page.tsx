@@ -2,54 +2,46 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 const techStack = {
-  "AI & Machine Learning": {
-    description: "Artificial Intelligence and Machine Learning Solutions",
+  "GPU Computing & HPC": {
+    description: "High-Performance Computing and GPU-Accelerated Systems",
     technologies: [
-      { name: "LangChain", level: "Expert", description: "Framework for building LLM applications" },
-      { name: "OpenAI API", level: "Expert", description: "Large Language Model integration" },
-      { name: "RAG", level: "Advanced", description: "Retrieval Augmented Generation" },
-      { name: "Vector Databases", level: "Advanced", description: "Pinecone, Weaviate, ChromaDB" },
-      { name: "Hugging Face", level: "Intermediate", description: "ML models and transformers" },
-      { name: "TensorFlow", level: "Intermediate", description: "Machine Learning framework" },
+      { name: "CUDA", level: "Expert", description: "Custom kernel development and optimization" },
+      { name: "A100 / H100", level: "Expert", description: "NVIDIA enterprise GPU architectures" },
+      { name: "NCCL", level: "Expert", description: "Multi-GPU communication optimization" },
+      { name: "TensorRT", level: "Advanced", description: "GPU inference optimization" },
+      { name: "Triton", level: "Advanced", description: "GPU kernel development framework" },
+      { name: "cuDNN", level: "Advanced", description: "Deep learning GPU primitives" },
     ],
   },
-  Frontend: {
-    description: "Modern web development with React ecosystem",
+  "AI Infrastructure": {
+    description: "Distributed AI Systems and Machine Learning Platforms",
     technologies: [
-      { name: "React", level: "Expert", description: "Component-based UI development" },
-      { name: "Next.js", level: "Expert", description: "Full-stack React framework" },
-      { name: "TypeScript", level: "Advanced", description: "Type-safe JavaScript development" },
-      { name: "Tailwind CSS", level: "Expert", description: "Utility-first CSS framework" },
-      { name: "Framer Motion", level: "Intermediate", description: "Animation library for React" },
+      { name: "PyTorch", level: "Expert", description: "Distributed training and inference" },
+      { name: "Transformers", level: "Expert", description: "Large language model architectures" },
+      { name: "Distributed Training", level: "Expert", description: "Multi-node, multi-GPU scaling" },
+      { name: "Model Optimization", level: "Expert", description: "Quantization, pruning, distillation" },
+      { name: "MLOps", level: "Advanced", description: "Production ML pipeline management" },
+      { name: "Inference Serving", level: "Advanced", description: "High-throughput model serving" },
     ],
   },
-  Backend: {
-    description: "Server-side development and API design",
+  "Systems Programming": {
+    description: "Low-level systems and performance optimization",
     technologies: [
-      { name: "Node.js", level: "Expert", description: "JavaScript runtime for servers" },
-      { name: "Express.js", level: "Expert", description: "Web framework for Node.js" },
-      { name: "Python", level: "Advanced", description: "Versatile programming language" },
-      { name: "FastAPI", level: "Advanced", description: "Modern Python web framework" },
-      { name: "GraphQL", level: "Intermediate", description: "Query language for APIs" },
+      { name: "Rust", level: "Expert", description: "Systems programming and cryptography" },
+      { name: "Python", level: "Expert", description: "AI/ML development and automation" },
+      { name: "C++", level: "Advanced", description: "Performance-critical applications" },
+      { name: "SPDM Protocol", level: "Advanced", description: "Hardware security attestation" },
+      { name: "Cryptography", level: "Advanced", description: "ECDSA, secure protocols" },
     ],
   },
-  Database: {
-    description: "Data storage and management solutions",
+  "Cloud & Infrastructure": {
+    description: "Enterprise-scale deployment and orchestration",
     technologies: [
-      { name: "MongoDB", level: "Expert", description: "NoSQL document database" },
-      { name: "PostgreSQL", level: "Advanced", description: "Relational database system" },
-      { name: "Redis", level: "Intermediate", description: "In-memory data structure store" },
-      { name: "Prisma", level: "Advanced", description: "Next-generation ORM" },
-    ],
-  },
-  Infrastructure: {
-    description: "Deployment, hosting, and DevOps tools",
-    technologies: [
-      { name: "Vercel", level: "Expert", description: "Frontend deployment platform" },
-      { name: "Docker", level: "Intermediate", description: "Containerization platform" },
-      { name: "AWS", level: "Intermediate", description: "Cloud computing services" },
-      { name: "Git", level: "Expert", description: "Version control system" },
-      { name: "GitHub Actions", level: "Intermediate", description: "CI/CD automation" },
+      { name: "Kubernetes", level: "Expert", description: "GPU workload orchestration" },
+      { name: "Docker", level: "Expert", description: "Containerized GPU applications" },
+      { name: "AWS", level: "Advanced", description: "EC2 P4/P5 GPU instances" },
+      { name: "Slurm", level: "Advanced", description: "HPC cluster management" },
+      { name: "Prometheus", level: "Advanced", description: "GPU metrics and monitoring" },
     ],
   },
 }
@@ -74,7 +66,8 @@ export default function Stack() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Tech Stack</h1>
           <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-            The tools and technologies I use to build modern, scalable web applications.
+            Advanced technologies and frameworks I leverage to architect GPU-accelerated AI systems
+            and high-performance computing infrastructure.
           </p>
         </div>
 
@@ -110,11 +103,11 @@ export default function Stack() {
         </div>
 
         <div className="mt-16 bg-indigo-50 rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Always Learning</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Technical Leadership</h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            Technology evolves rapidly, and so do I. I'm constantly exploring new tools, frameworks, and best practices
-            to stay at the forefront of web development. Currently diving deeper into AI integration and serverless
-            architectures.
+            Leading innovation in GPU computing and AI infrastructure. Currently advancing the state-of-the-art
+            in multi-GPU distributed systems, secure hardware attestation, and next-generation
+            AI acceleration technologies.
           </p>
         </div>
       </div>

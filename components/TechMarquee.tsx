@@ -1,22 +1,24 @@
 "use client"
 
 const technologies = [
-  "MongoDB",
-  "Express.js",
-  "React",
-  "Next.js",
-  "Node.js",
+  "CUDA",
+  "PyTorch",
+  "TensorRT",
+  "A100",
+  "H100",
+  "Rust",
   "Python",
-  "FastAPI",
-  "Git",
-  "Vercel",
-  "Tailwind CSS",
-  "TypeScript",
+  "Distributed Systems",
+  "NCCL",
+  "Triton",
+  "cuDNN",
+  "OpenAI",
+  "Transformers",
+  "HPC",
   "Docker",
-  "Firebase",
-  "PostgreSQL",
-  "Redis",
+  "Kubernetes",
   "AWS",
+  "SPDM",
 ]
 
 export default function TechMarquee() {

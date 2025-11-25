@@ -3,52 +3,46 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const timeline = [
   {
-    year: "2020",
-    title: "Learning Phase",
-    description:
-      "Started with HTML, CSS, and JavaScript. Built my first responsive website and fell in love with web development.",
-  },
-  {
     year: "2021",
-    title: "First Deployments",
+    title: "Systems Foundation",
     description:
-      "Learned React and Node.js. Deployed my first full-stack application and discovered the joy of seeing code come to life.",
+      "Built foundational expertise in distributed systems and high-performance computing architectures. Started with GPU computing fundamentals.",
   },
   {
     year: "2022",
-    title: "Freelance Start",
+    title: "GPU Computing Specialization",
     description:
-      "Began freelancing while studying. Worked on 10+ projects, learning client communication and project management.",
+      "Developed deep expertise in CUDA programming and GPU-accelerated computing. Led first multi-GPU training projects with measurable performance gains.",
   },
   {
     year: "2023",
-    title: "Product Collaborations",
+    title: "AI Infrastructure Leadership",
     description:
-      "Joined product teams as a contractor. Contributed to scalable applications serving thousands of users.",
+      "Promoted to lead AI infrastructure initiatives. Architected distributed training systems and optimized inference pipelines serving enterprise workloads.",
   },
   {
     year: "2024",
-    title: "Full Stack Mastery",
+    title: "Technical Leadership & Innovation",
     description:
-      "Expanded into Python and AI integration. Building products that solve real problems with modern technology.",
+      "Leading cross-functional teams of 8+ engineers building next-generation GPU-accelerated AI platforms and secure hardware attestation systems.",
   },
 ]
 
 const values = [
   {
     icon: Code,
-    title: "Simplicity over noise",
-    description: "Clean, readable code that solves problems without unnecessary complexity.",
+    title: "Performance at scale",
+    description: "Architecting systems that handle massive computational workloads with optimal resource utilization.",
   },
   {
     icon: Target,
-    title: "Function over flash",
-    description: "Beautiful interfaces that prioritize user experience and accessibility.",
+    title: "Technical excellence",
+    description: "Deep expertise in GPU computing, distributed systems, and AI infrastructure optimization.",
   },
   {
     icon: Lightbulb,
-    title: "Long-term impact over hype",
-    description: "Building solutions that stand the test of time and create lasting value.",
+    title: "Innovation leadership",
+    description: "Driving breakthrough solutions in GPU-accelerated computing and secure AI systems.",
   },
 ]
 
@@ -59,8 +53,8 @@ export default function About() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">About Me</h1>
           <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-            From curious beginner to full-stack developer, here's my journey in building digital experiences that
-            matter.
+            From systems engineer to AI infrastructure technical lead over 4+ years, here's my journey in building
+            high-performance computing solutions that power the future.
           </p>
         </div>
 
@@ -107,11 +101,11 @@ export default function About() {
 
         {/* Personal Note */}
         <div className="bg-gray-50 rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Beyond the Code</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Technical Leadership</h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or
-            mentoring aspiring developers. I believe in the power of community and continuous learning in shaping the
-            future of web development.
+            Over 4+ years, I've led technical teams in designing GPU-accelerated AI infrastructure, from distributed training systems
+            to secure hardware attestation. My expertise spans CUDA optimization, multi-GPU architectures, and
+            building production-ready AI systems that scale to enterprise demands with proven results.
           </p>
         </div>
       </div>

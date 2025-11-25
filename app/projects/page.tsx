@@ -6,34 +6,50 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
   {
-    id: "fiberstage",
-    title: "FiberStage",
-    description: "A modern React + Next.js portfolio framework with built-in animations and responsive design.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    id: "neural-rag",
+    title: "Enterprise RAG System",
+    description: "Production RAG implementation with vector search and GPU acceleration, serving 10K+ daily queries with high accuracy.",
+    tags: ["RAG", "Python", "Vector DB", "FastAPI", "Redis"],
     status: "Live",
     image: "/placeholder.svg?height=200&width=400",
   },
   {
-    id: "ecoinfra",
-    title: "EcoInfra",
-    description: "MERN + Python IoT infrastructure dashboard for monitoring environmental data in real-time.",
-    tags: ["MERN", "Python", "IoT", "MongoDB", "Express"],
+    id: "ai-customer-support",
+    title: "AI Customer Support Bot",
+    description: "Intelligent chatbot with RAG-enhanced responses, handling 5K+ customer queries monthly with 85% resolution rate.",
+    tags: ["OpenAI API", "LangChain", "React", "Node.js", "MongoDB"],
     status: "Live",
     image: "/placeholder.svg?height=200&width=400",
   },
   {
-    id: "promptforge",
-    title: "PromptForge",
-    description: "OpenAI prompt management tool for organizing, testing, and optimizing AI prompts.",
-    tags: ["React", "OpenAI API", "Node.js", "PostgreSQL"],
+    id: "document-qa",
+    title: "Document Q&A Assistant",
+    description: "AI-powered document analysis tool that extracts insights from PDFs and documents with natural language queries.",
+    tags: ["Python", "Streamlit", "OpenAI", "PDF Processing", "NLP"],
+    status: "Live",
+    image: "/placeholder.svg?height=200&width=400",
+  },
+  {
+    id: "code-review-bot",
+    title: "Code Review Assistant",
+    description: "LLM-powered code analysis tool that provides automated suggestions and identifies potential issues in pull requests.",
+    tags: ["GitHub API", "Python", "FastAPI", "Code Analysis", "CI/CD"],
     status: "Beta",
     image: "/placeholder.svg?height=200&width=400",
   },
   {
-    id: "gpt-audit",
-    title: "GPT-Audit AI",
-    description: "Python + GPT-4 powered content review tool for automated quality assurance.",
-    tags: ["Python", "GPT-4", "FastAPI", "Machine Learning"],
+    id: "smart-content-generator",
+    title: "Content Generation Platform",
+    description: "Marketing content generator using fine-tuned models, creating blog posts and social media content with brand consistency.",
+    tags: ["Fine-tuning", "React", "PostgreSQL", "Content Strategy"],
+    status: "Live",
+    image: "/placeholder.svg?height=200&width=400",
+  },
+  {
+    id: "distributed-training",
+    title: "Multi-GPU Training System",
+    description: "Distributed training pipeline supporting 4-8 GPU setups with optimized communication and checkpointing.",
+    tags: ["PyTorch", "CUDA", "Distributed", "MLOps"],
     status: "Live",
     image: "/placeholder.svg?height=200&width=400",
   },
@@ -41,31 +57,31 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="px-6 py-24 sm:py-32 lg:px-8">
+    <div className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
       <div className="mx-auto max-w-7xl">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Projects</h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-            A collection of projects that showcase my skills in full-stack development, from concept to deployment.
+        <div className="text-center mb-12 sm:mb-16">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">Projects</h1>
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-600 max-w-2xl mx-auto px-4">
+            Real-world AI projects showcasing 4+ years of hands-on experience in GPU computing,
+            distributed systems, and production AI deployments.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200"
-              data-cursor="view"
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 h-full flex flex-col"
             >
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-xl font-semibold">{project.title}</CardTitle>
-                  <Badge variant={project.status === "Live" ? "default" : "secondary"}>{project.status}</Badge>
+              <CardHeader className="flex-shrink-0">
+                <div className="flex items-start justify-between gap-2">
+                  <CardTitle className="text-lg sm:text-xl font-semibold leading-tight">{project.title}</CardTitle>
+                  <Badge variant={project.status === "Live" ? "default" : "secondary"} className="shrink-0">{project.status}</Badge>
                 </div>
-                <CardDescription className="text-base">{project.description}</CardDescription>
+                <CardDescription className="text-sm sm:text-base mt-2">{project.description}</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-6">
+              <CardContent className="flex-1 flex flex-col">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                   {project.tags.map((tag) => (
                     <Badge key={tag} variant="outline" className="text-xs">
                       {tag}
@@ -73,23 +89,11 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <Button asChild size="sm" className="group/btn">
+                <div className="flex justify-center mt-auto">
+                  <Button asChild size="sm" className="group/btn w-full sm:w-auto">
                     <Link href={`/projects/${project.id}`}>
-                      View Case Study
+                      View Details
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                    </Link>
-                  </Button>
-                  <Button variant="outline" size="sm" asChild>
-                    <Link href="#" target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </Link>
-                  </Button>
-                  <Button variant="outline" size="sm" asChild>
-                    <Link href="#" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
                     </Link>
                   </Button>
                 </div>

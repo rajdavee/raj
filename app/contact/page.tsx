@@ -27,10 +27,10 @@ export default function Contact() {
                 <div className="flex-1">
                   <p className="font-medium text-gray-900">Email</p>
                   <a
-                    href="mailto:raj.dave@jashom.com"
+                    href="mailto:rajdave710@gmail.com"
                     className="text-indigo-600 hover:text-indigo-500 transition-colors text-lg"
                   >
-                    raj.dave@jashom.com
+                    rajdave710@gmail.com
                   </a>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function Contact() {
               <div className="pt-6 border-t border-gray-200">
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild className="flex-1">
-                    <a href="mailto:raj.dave@jashom.com">
+                    <a href="mailto:rajdave710@gmail.com">
                       <Mail className="mr-2 h-4 w-4" />
                       Send Email
                     </a>
