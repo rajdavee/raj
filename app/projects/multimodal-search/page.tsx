@@ -91,7 +91,7 @@ export default function MultimodalSearch() {
 
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Performance Metrics</h3>
           <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-6">
-            <li>Search latency: <100ms for queries across 10M+ assets</li>
+            <li>Search latency: &lt;100ms for queries across 10M+ assets</li>
             <li>Indexing throughput: 50,000 images/videos per hour</li>
             <li>Accuracy: 94.2% relevance score on multimodal benchmarks</li>
             <li>Scale: Supporting 500M+ indexed items with real-time updates</li>
